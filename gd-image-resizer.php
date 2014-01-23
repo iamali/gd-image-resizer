@@ -21,15 +21,13 @@
             $source_image_info = list( $source_width, $source_height, $source_type ) = getimagesize( $folder.$image );
 
 
-            // get the aspect ratio
-            $source_aspect_ratio = $source_width / $source_height;
-
-
-            // get ratios of width & height
+            // work out the ratio between the source image w/h & the new image w/h
             $widthDiff = $source_width / $target_width;
             $heightDiff = $source_height / $target_height;
+
+
+            // get the smaller ratio of the two
             $ratio = min( array($widthDiff, $heightDiff) );
-            echo $ratio;
 
 
             // work out new width & height
@@ -37,7 +35,8 @@
             $newWidth = round($source_width / $ratio);
         
 
-            // create new image
+            // work out whether to set the width or height as longer than specified
+            // idea being to set the shorter one as specified, then crop off the longer one down to size after
             if ($newWidth > $target_width) {
 
                 // crop from left and right
