@@ -7,10 +7,9 @@
 
 
     // resize image
-    function resizeImage( $image, $target_width, $target_height, $quality ) {
+    function resizeImage( $folder, $image, $quality, $target_width, $target_height ) {
 
         // set up
-        $folder = 'uploads/';
         $file = explode(".", $image);
         $image_name = $file[0];
         $extension = $file[1];
@@ -21,6 +20,7 @@
             // get source image info
             $source_image_info = list( $source_width, $source_height, $source_type ) = getimagesize( $folder.$image );
 
+
             // get the aspect ratio
             $source_aspect_ratio = $source_width / $source_height;
 
@@ -29,6 +29,7 @@
             $widthDiff = $source_width / $target_width;
             $heightDiff = $source_height / $target_height;
             $ratio = min( array($widthDiff, $heightDiff) );
+            echo $ratio;
 
 
             // work out new width & height
