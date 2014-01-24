@@ -33,10 +33,10 @@
 
 				// file pieces
 				$file = explode(".", $imageName);
-	    		$image_name = $file[0];
-	    		$extension = $file[1];
+				$image_name = $file[0];
+				$extension = $file[1];
 
-	    		if (file_exists($image)) {
+				if (file_exists($image)) {
 
 		            // get source image info
 		            $source_image_info = list( $source_width, $source_height, $source_type ) = getimagesize( $image );
@@ -113,20 +113,18 @@
 		            
 		            }
 
-	    		}
+				}
 			}
 
-	    	return $image;
+			return $image;
 			
 		}
 	}
 
 
-
-
-    // calculation
-    function minus($a, $b) {
-        return $a - $b;
-    }
+	// calculation
+	function minus($a, $b) {
+		return $a - $b;
+	}
 
 ?>
