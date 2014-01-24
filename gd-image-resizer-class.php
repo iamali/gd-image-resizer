@@ -12,7 +12,7 @@
 	
 			$image = $this->imageObject;
 			echo $image;
-			
+			 
 			foreach ($sizes as $size) {
 	
 				// target sizes
