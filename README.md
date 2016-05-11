@@ -1,7 +1,7 @@
 GD Image Resizer
 ===
 
-A PHP snippit to resize & crop images using GD Library.
+A PHP snippet to resize & crop images using GD Library.
 
 Useage
 ---------------
