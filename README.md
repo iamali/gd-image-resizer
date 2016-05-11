@@ -9,11 +9,22 @@ Example useage
 You can use it as a function like this:
 
 ```
-resizeImage( 'uploads/', 'test.jpg', 90, 800, 600 );
-//resizeImage( $folder, $image, $quality, $target_width, $target_height );
+resizeImage( $folder, $image, $quality, $target_width, $target_height );
 ```
 
-Or as a class like this:
+| Property  | Description |
+|---|---|
+| folder  | Folder where the image exists |
+| image | Name of the image including extension |
+| quality | Quality of the image |
+| target_width | Desired width of the image |
+| target_height | Desired height of the image |
+
+```
+resizeImage( 'uploads/', 'test.jpg', 90, 800, 600 );
+```
+
+Or as a class like this for multiple images:
 
 ```
 $images = array( 'uploads/test.jpg', 'uploads/test.png' );
