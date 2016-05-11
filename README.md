@@ -3,7 +3,7 @@ GD Image Resizer
 
 A PHP snippit to resize & crop images using GD Library.
 
-Example useage
+Useage
 ---------------
 
 You can use it as a function like this:
