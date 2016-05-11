@@ -1,18 +1,19 @@
 GD Image Resizer
 ===
 
-Resize & crop images using GD Library for PHP.
+A PHP snippit to resize & crop images using GD Library.
 
-Example useage (Function)
+Example useage
 ---------------
+
+You can use it as a function like this:
 
 ```
 resizeImage( 'uploads/', 'test.jpg', 90, 800, 600 );
 //resizeImage( $folder, $image, $quality, $target_width, $target_height );
 ```
 
-Example useage (Class)
----------------
+Or as a class like this:
 
 ```
 $images = array( 'uploads/test.jpg', 'uploads/test.png' );
